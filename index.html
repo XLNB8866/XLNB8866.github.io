@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小乐后台中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        /* 改成截图的蓝色背景 */
+        body {
+            background-color: #4158D0; 
+            padding: 30px;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .download-list {
+            margin-bottom: 40px;
+        }
+        /* 绿色圆角按钮样式（还原截图） */
+        .green-btn {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            margin: 15px 0;
+            background-color: #3CB371; 
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            border: none;
+            border-radius: 15px; 
+            cursor: pointer;
+            transition: opacity 0.2s;
+            text-decoration: none;
+        }
+        .green-btn:hover {
+            opacity: 0.9;
+        }
+        .notice {
+            background-color: #fff5f5;
+            color: #e53e3e;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .group-info {
+            text-align: center;
+            font-size: 18px;
+            color: #2d3748;
+        }
+        .group-number {
+            color: #e53e3e;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>模拟器及各类资源下载，点了没提示就是（暂时还没有）</h1>
+        
+        <div class="notice">
+            下载前，请进入最后一页官方QQ群获取最新版本！
+        </div>
+
+        <div class="download-list">
+            <button class="green-btn" onclick="showTip()">模拟器下载</button>
+            <button class="green-btn" onclick="showTip()">新版本QQ / QQ账号切换</button>
+            <button class="green-btn" onclick="showTip()">新版本快手 / 快手设备</button>
+            <button class="green-btn" onclick="showTip()">Telegram</button>
+            <button class="green-btn" onclick="showTip()">新版本和平营地</button>
+            <button class="green-btn" onclick="showTip()">新版本一起听 / 新版本网易云</button>
+            <button class="green-btn" onclick="showTip()">支付宝-小荷包</button>
+            <button class="green-btn" onclick="showTip()">TT语音 / TT账号切换</button>
+            <button class="green-btn" onclick="showTip()">新版本微信群聊</button>
+            <!-- 跳转链接保持按钮样式 -->
+            <a href="https://yka.ymyfak.com/links/969D05E6" target="_blank" class="green-btn">tg验证</a>
+            <button class="green-btn" onclick="showTip()">梅赛德斯-e300 / 梅赛德斯-s480</button>
+        </div>
+
+        <div class="group-info">
+            官方群号：
+            <div class="group-number">959186639</div>
+        </div>
+    </div>
+
+    <script>
+        // 点击按钮触发提示（没提示的资源会静默）
+        function showTip() {
+            // 这里可以根据按钮内容判断是否有资源，暂时统一提示
+            alert('请加入官方群（群号：959186639）获取资源~');
+        }
+    </script>
+</body>
+</html>
